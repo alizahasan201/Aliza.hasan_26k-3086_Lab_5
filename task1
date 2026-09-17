@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int age, marks;
+
+    printf("Enter Age: ");
+    scanf("%d", &age);
+
+    printf("Enter Marks: ");
+    scanf("%d", &marks);
+
+    if (age >= 18)
+    {
+        if (marks >= 50)
+        {
+            printf("Eligible for Admission");
+        }
+        else
+        {
+            printf("Not Eligible");
+        }
+    }
+    else
+    {
+        printf("Criteria didn't meet");
+    }
+
+    return 0;
+}
