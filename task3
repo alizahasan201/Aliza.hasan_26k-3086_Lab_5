@@ -1,0 +1,89 @@
+#include <stdio.h>
+
+int main()
+{
+    int department, section;
+
+    printf("Select Department:\n");
+    printf("1 = Computer Science\n");
+    printf("2 = Information Technology\n");
+    printf("3 = Artificial Intelligence\n");
+    scanf("%d", &department);
+
+    switch(department)
+    {
+        case 1:
+            printf("Select Section:\n");
+            printf("1 = Section A\n");
+            printf("2 = Section B\n");
+            scanf("%d", &section);
+
+            switch(section)
+            {
+                case 1:
+                    printf("Department: Computer Science\n");
+                    printf("Section: Section A");
+                    break;
+
+                case 2:
+                    printf("Department: Computer Science\n");
+                    printf("Section: Section B");
+                    break;
+
+                default:
+                    printf("Invalid Section Choice");
+            }
+            break;
+
+        case 2:
+            printf("Select Section:\n");
+            printf("1 = Section A\n");
+            printf("2 = Section B\n");
+            scanf("%d", &section);
+
+            switch(section)
+            {
+                case 1:
+                    printf("Department: Information Technology\n");
+                    printf("Section: Section A");
+                    break;
+
+                case 2:
+                    printf("Department: Information Technology\n");
+                    printf("Section: Section B");
+                    break;
+
+                default:
+                    printf("Invalid Section Choice");
+            }
+            break;
+
+        case 3:
+            printf("Select Section:\n");
+            printf("1 = Section A\n");
+            printf("2 = Section B\n");
+            scanf("%d", &section);
+
+            switch(section)
+            {
+                case 1:
+                    printf("Department: Artificial Intelligence\n");
+                    printf("Section: Section A");
+                    break;
+
+                case 2:
+                    printf("Department: Artificial Intelligence\n");
+                    printf("Section: Section B");
+                    break;
+
+                default:
+                    printf("Invalid Section Choice");
+            }
+            break;
+
+        default:
+            printf("Invalid Department Choice");
+    }
+
+    return 0;
+}
