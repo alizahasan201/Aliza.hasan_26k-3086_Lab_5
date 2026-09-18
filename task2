@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int cnic, dr_tst;
+    printf("Do you have a CNIC: ");
+    scanf("%d", & cnic);
+    if(cnic == 1)
+    {
+        printf("Have you passed the driving test: ");
+        scanf("%d", & dr_tst);
+
+        if(dr_tst == 1)
+        {
+            printf("License can be issued");   }
+        else
+        {  printf("License can not issued");  }
+    }
+    else {
+        printf("Doesn't have CNIC");    }
+
+    return 0;
+}
